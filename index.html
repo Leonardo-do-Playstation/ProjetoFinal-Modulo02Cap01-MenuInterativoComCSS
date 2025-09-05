@@ -7,77 +7,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-         <div class="entire-menu">
-           <div class="main-image">
+    <div class="entire-menu">
+        <div class="main-image">
             <img src="assets/home.jpg" alt="Home da página">
-           </div>
-            <div class="text1 main-title">    
-              <p>Menu - Faça a sua escolha</p>
-            </div>
-                <div class="main-orders">
-                    <div class="info-box order-box">
-                        <div class="text1 box-title">
-                            <h3>Prato principal</h3>
-                        </div>
-                        <div class="text1 description">
-                            <p><strong>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</strong></p>
-                        </div>
-                        <div class="text1 order">
-                            <div class="order-image">
-                                <img src="assets/bife.jpg" alt="Bife com batata">
-                            </div>
-                            <p><strong>Bife com batata</strong></p>
-                        </div>
-                        <div class="text1 order">
-                             <div class="order-image">
-                                <img src="assets/coxa.jpg" alt="Coxa de frango crocante">
-                            </div>
-                            <p><strong>Coxa de frango crocante</strong></p>
-                        </div>
-                        <div class="text1 order">
-                             <div class="order-image">
-                                <img src="assets/panela.jpg" alt="Carne de panela">
-                            </div>
-                            <p><strong>Carne de panela</strong></p>
-                        </div>
-                    </div>
-                    <div class="info-box order-box">
-                        <div class="text1 box-title">
-                            <h3>Acompanhamentos</h3>
-                        </div>
-                        <div class="text1 description">
-                            <p><strong>Porções para uma pessoa.</strong></p>
-                        </div>
-                        <div class="text1 order">
-                             <div class="order-image">
-                                <img src="assets/farofa.jpg" alt="Farofa">
-                            </div>
-                            <p><strong>Farofa</strong></p>
-                        </div>
-                        <div class="text1 order">
-                             <div class="order-image">
-                                <img src="assets/salada.jpg" alt="Salada">
-                            </div>
-                            <p><strong>Salada</strong></p>
-                        </div>
-                        <div class="text1 order">
-                             <div class="order-image">
-                                <img src="assets/torresmo.jpg" alt="Torresmo">
-                            </div>
-                            <p><strong>Torresmo</strong></p>
-                        </div>
-                    </div>
-                </div>
-            <div class="info-box register">
-                <div class="text1 box-title">
-                <h3>Dados pessoais</h3>
-                </div>
-                <input placeholder="Digite o seu nome">
-                <input placeholder="Digite o seu telefone">
-                <input placeholder="Digite o seu email">
-            </div>
-            <button>Calcular</button>
         </div>
-    <script></script>
+
+        <div class="text1 main-title">
+            <p>Menu - Faça a sua escolha</p>
+        </div>
+
+        <div class="main-orders">
+            <div class="info-box order-box">
+                <div class="text1 box-title">
+                    <h3>Prato principal</h3>
+                </div>
+                <div class="text1 description">
+                    <p><strong>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</strong></p>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/bife.jpg" alt="Bife com batata">
+                    </div>
+                    <p><strong>Bife com batata</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="1" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/coxa.jpg" alt="Coxa de frango crocante">
+                    </div>
+                    <p><strong>Coxa de frango crocante</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="2" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/panela.jpg" alt="Carne de panela">
+                    </div>
+                    <p><strong>Carne de panela</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="3" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box order-box">
+                <div class="text1 box-title">
+                    <h3>Acompanhamentos</h3>
+                </div>
+                <div class="text1 description">
+                    <p><strong>Porções para uma pessoa.</strong></p>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/farofa.jpg" alt="Farofa">
+                    </div>
+                    <p><strong>Farofa</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="4" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/salada.jpg" alt="Salada">
+                    </div>
+                    <p><strong>Salada</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="5" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+
+                <div class="text1 order">
+                    <div class="order-image">
+                        <img src="assets/torresmo.jpg" alt="Torresmo">
+                    </div>
+                    <p><strong>Torresmo</strong></p>
+                    <div class="quantity">
+                        <input type="number" step="1" min="0" id="6" name="quantity" value="0" class="input-text qty text">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box register">
+            <div class="text1 box-title">
+                <h3>Dados pessoais</h3>
+            </div>
+            <input type="text" id="name" placeholder="Digite o seu nome">
+            <input type="text" id="phone" placeholder="Digite o seu telefone">
+            <input type="text" id="email" placeholder="Digite o seu email">
+        </div>
+
+        <button onclick="calc()">Calcular</button>
+
+        <div class="text1 output" id="output"></div>
+    </div>
+         <script src="./exemplos/exemplo01-mask/js/jquery-3.6.0.min.js"> </script>
+         <script src="./exemplos/exemplo01-mask/js/jquery.mask.min.js"> </script>
+         <script src="./exemplos/exemplo03-quantity-array/js/quantity.js"> </script>
+         <script src="./javascript.js"></script>
+    <script>
+            $("#phone").mask("(99) 9999-99999");
+    </script>
 </body>
 </html>

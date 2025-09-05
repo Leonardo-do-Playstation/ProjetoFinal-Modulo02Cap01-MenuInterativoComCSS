@@ -26,7 +26,7 @@
  }
 
  .order-box{
-    height: 415px;
+    height: 400px;
     margin-bottom: 20px;
     gap: 15px;
     justify-content: center;
@@ -90,6 +90,13 @@
     cursor: pointer;
  }
 
+ .output{
+   text-align: left;
+   justify-content: left;
+   margin-top: 25px;
+   font-size: 15px;
+ }
+
  .text1{
    font-family: Arial, Helvetica, sans-serif;
  }
@@ -115,3 +122,71 @@
    font-size: 23px;
    margin-top: -7px;
  }
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+}
+
+.quantity .input-text.qty {
+    width: 24px;
+    height: 32px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+    
+}
+
+.quantity.buttons_added {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    width: 25px;              
+    height: 33px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;    
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    font-size: 15px;          
+    padding: 0;               
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
