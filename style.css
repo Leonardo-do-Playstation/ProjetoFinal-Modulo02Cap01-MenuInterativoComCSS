@@ -11,8 +11,8 @@
     width: 700px;
     margin: auto;
     justify-content: center;
-    border-radius: 7px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2), -8px 0px 16px rgba(0,0,0,0.2);
     padding: 20px;
     margin-top: 225px;
  }
@@ -20,7 +20,7 @@
  .info-box{
     background-color: #F5F5F5 ;
     border-radius: 10px;
-    box-shadow: 3px 8px 8px 0 rgba(0, 0, 0, 0.3); 
+    box-shadow: 3px 8px 8px 0 rgba(0, 0, 0, 0.3), -4px 0px 16px rgba(0,0,0,0.2); 
     padding-bottom: 25px;
     padding-top: 8px;
  }
@@ -51,6 +51,12 @@
     border-radius: 5px;
     margin: 8px 10px 10px auto;
 }
+.price h3{
+   color: green;
+   margin-top: -14px;
+   font-size: 15px;
+   margin-bottom: -1px;
+}
 
 .main-image img{
    width: 100%;
@@ -76,6 +82,9 @@
     height: 30px;
     padding-left: 5px;
  }
+   input:not(:placeholder-shown) {
+   background-color: white;
+ }
 
  button{
     background-color: #007AFF;
@@ -94,7 +103,8 @@
    text-align: left;
    justify-content: left;
    margin-top: 25px;
-   font-size: 15px;
+   margin-bottom: 20px;
+   font-size: 12px;
  }
 
  .text1{

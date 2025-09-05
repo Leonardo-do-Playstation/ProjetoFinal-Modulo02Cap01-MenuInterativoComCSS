@@ -4,7 +4,7 @@ var foods = [
     { id: 2, name: "Coxa de frango crocante", price: 25.0 },
     { id: 3, name: "Carne de panela", price: 22.0 },
     { id: 4, name: "Farofa", price: 10.0 },
-    { id: 5, name: "Alface", price: 8.0 },
+    { id: 5, name: "Salada", price: 8.0 },
     { id: 6, name: "Torresmo", price: 12.0 },
 ];
 
@@ -59,6 +59,6 @@ function calc(){
                              </li>`;
      }
         }
-        output.innerHTML += `</ul><br><br><br>Preço final: ${formatter.format(total)}`;
+        output.innerHTML += `</ul><br><br><br><strong>Preço final: ${formatter.format(total)}<strong>`;
     
 }
